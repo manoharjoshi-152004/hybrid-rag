@@ -1,0 +1,12 @@
+[
+  {"question": "What does error E-4021 mean?", "source": "acme_router_manual.md", "contains": "WAN link has failed"},
+  {"question": "How do I factory reset the router?", "source": "acme_router_manual.md", "contains": "hold the recessed reset button"},
+  {"question": "What does a solid red light mean?", "source": "acme_router_manual.md", "contains": "solid red LED"},
+  {"question": "Where can I find the default Wi-Fi password?", "source": "acme_router_manual.md", "contains": "label on the bottom"},
+  {"question": "E-1107", "source": "acme_router_manual.md", "contains": "firmware checksum mismatch"},
+  {"question": "Can I return an opened product and is there a fee?", "source": "acme_returns_policy.md", "contains": "15 percent restocking fee"},
+  {"question": "How long does a refund take?", "source": "acme_returns_policy.md", "contains": "5 to 7 business days"},
+  {"question": "What is an RMA number?", "source": "acme_returns_policy.md", "contains": "RMA-48213"},
+  {"question": "Does the warranty cover water damage?", "source": "acme_returns_policy.md", "contains": "water, power surges"},
+  {"question": "How many years is the router warranty?", "source": "acme_returns_policy.md", "contains": "2 year limited warranty"}
+]
