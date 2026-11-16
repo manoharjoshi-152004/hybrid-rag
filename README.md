@@ -73,14 +73,9 @@ Compares four configurations on `eval/questions.json` using **Recall@5** and **M
 
 ### Results
 
-> Replace this table with your own numbers from `eval/results.md` after running on your documents.
+The evaluation script (`eval/run_eval.py`) compares dense, BM25, hybrid (RRF), and hybrid + rerank using Recall@5 and MRR on a question set you provide in `eval/questions.json`. Results on my own document set are coming soon.
 
-| Configuration | Recall@5 | MRR |
-|---|---|---|
-| Dense only | – | – |
-| BM25 only | – | – |
-| Hybrid (RRF) | – | – |
-| Hybrid + rerank | – | – |
+Demo corpus: a PDF on 10 RAG architectures
 
 ## Project structure
 
