@@ -73,10 +73,20 @@ Compares four configurations on `eval/questions.json` using **Recall@5** and **M
 
 ### Results
 
-The evaluation script (`eval/run_eval.py`) compares dense, BM25, hybrid (RRF), and hybrid + rerank using Recall@5 and MRR on a question set you provide in `eval/questions.json`. Results on my own document set are coming soon.
+### Results
 
-Demo corpus: a PDF on 10 RAG architectures
+Evaluated on 33 questions about a PDF on 10 RAG architectures (top-5 retrieval, 15 chunks).
 
+| Configuration | Recall@5 | MRR |
+|---|---|---|
+| Dense only | 0.00 | 0.00 |
+| BM25 only | 0.00 | 0.00 |
+| Hybrid (RRF) | 0.00 | 0.00 |
+| Hybrid + rerank | 0.00 | 0.00 |
+
+**Takeaway:** WRITE ONE SENTENCE FROM THE OPTIONS BELOW.
+
+**Limitations:** The corpus is small (15 chunks), so the configurations are hard to separate. Results should be re-run on a larger document set
 ## Project structure
 
 ```
