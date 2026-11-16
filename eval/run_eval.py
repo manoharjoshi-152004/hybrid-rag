@@ -7,6 +7,7 @@ Results are printed and saved to eval/results.md.
 Run:  python -m eval.run_eval
 """
 import json
+import re
 from pathlib import Path
 
 from src.pipeline import search
@@ -23,8 +24,13 @@ CONFIGS = [
 ]
 
 
+def _norm(text: str) -> str:
+    """Ignore case and any whitespace/newline differences (PDF text has odd line breaks)."""
+    return re.sub(r"\s+", " ", text).strip().lower()
+
+
 def is_relevant(chunk: dict, q: dict) -> bool:
-    return chunk["source"] == q["source"] and q["contains"].lower() in chunk["text"].lower()
+    return chunk["source"] == q["source"] and _norm(q["contains"]) in _norm(chunk["text"])
 
 
 def main():
