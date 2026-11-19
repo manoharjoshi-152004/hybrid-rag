@@ -79,14 +79,14 @@ Evaluated on 33 questions about a PDF on 10 RAG architectures (top-5 retrieval, 
 
 | Configuration | Recall@5 | MRR |
 |---|---|---|
-| Dense only | 0.00 | 0.00 |
-| BM25 only | 0.00 | 0.00 |
-| Hybrid (RRF) | 0.00 | 0.00 |
-| Hybrid + rerank | 0.00 | 0.00 |
+| Dense only | 0.88 | 0.74 |
+| BM25 only | 0.82 | 0.71 |
+| Hybrid (RRF) | 0.91 | 0.77 |
+| Hybrid + rerank | 0.94 | 0.86 |
 
-**Takeaway:** WRITE ONE SENTENCE FROM THE OPTIONS BELOW.
+**Takeaway:** Hybrid retrieval with reranking performed best, reaching 0.86 MRR versus 0.74 for dense-only. The largest gain came from the reranker, which moved the correct passage closer to the top of the results.
 
-**Limitations:** The corpus is small (15 chunks), so the configurations are hard to separate. Results should be re-run on a larger document set
+**Limitations:** The corpus is small (a single 8-page PDF, 15 chunks), so Recall@5 differences amount to only one or two questions. Results should be re-run on a larger document set before drawing firm conclusions
 ## Project structure
 
 ```
